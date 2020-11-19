@@ -1,0 +1,182 @@
+
+<!doctype html>
+<html lang="ja" >
+  <head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--      ↓サニタイズcss-->
+  <link href="css/sanitize.css" rel="stylesheet">
+<!--    ↓検索除け-->
+  <meta name="robots" content="noindex,nofollow">
+<!--    googleフォント-->
+<!--  ↓デフォルト    -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+<!--    ↓ヘッダーのみ-->
+  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+<!--    googleフォント-->
+<!--    ↓Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="image/favicon.ico" rel="icon">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Portfolio | 櫻木すみれ</title>
+      
+  </head>
+
+<body>
+<header>
+<!--    ヘッダーの外-->
+    <div class="header-container">
+  <h1>サクラギスミレ<br>Portfolio</h1>
+  </div>
+<!--    ヘッダーの外-->
+</header>
+    
+    
+    
+    
+    
+    
+<nav>
+    <div class="nav-container">
+        <ul>
+        <li><a href="#about">概要</a></li>
+        <li><a href="#self-introduction">自己紹介</a></li>
+        <li><a href="#production-object">制作物</a></li>
+        <li><a href="#usage">スキル</a></li>
+        <li><a href="#hobby">趣味</a></li>
+            </ul>
+    </div>
+</nav>
+    
+    
+    
+    
+    
+<main>
+<div class="main-container">
+    <div class="about card">
+<!--    ここにこのページの概要を置く-->
+    <h2 id="about"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i>概要</h2>
+      
+    <p>このページは櫻木すみれのポートフォリオサイトになります。<br>よろしければご覧ください。
+    </p>
+      
+    </div>
+    <div class="self-introduction card">
+<!--        ここに自己紹介-->
+    
+      <h2 id="self-introduction"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i>自己紹介</h2>
+      <img src="image/69553044.png" width=200px alt="プロフィール画像">
+     <h3 id="myname"><i class="fa fa-paw"></i> 櫻木すみれ</h3>
+      <p>1992年11月11日生まれ。徳島生まれ徳島育ち。<br>2015年に徳島文理大学人間生活学部食物栄養学科を卒業。<br>2018年~2020年の間、栄養士として病院に従事、そこでは症状に合わせた病院食を約150食、職員の昼食を約200食作っていました。<br>スキルアップの為、職業訓練でMicrosoftofficeソフト、webプログラミング、pythonを学習しました。<br>趣味はキャンプ、釣り、ゲームなど。</p><br>写真は飼い猫のロシアンブルーです。
+      <p><i class="fab fa-github"></i> Github<br>https://github.com/oyo6464</p>
+      <p></p>
+    </div>
+    <div class="production-object card">
+<!--    制作したものをここで紹介する-->
+    <h2 id="production-object"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i>制作物紹介</h2>
+      <h4><i class="fa fa-star"></i> 四択問題作成アプリ</h4>
+      <div class="right-image"><a href="https://oyo6464.herokuapp.com/" target="_blank"><img src="image/flask_app.png" alt="スクリーンショット" width=250px></a></div>
+      <p>内容：ユーザーが四択クイズを1~3問作成し、URL経由で共有できるアプリです。任意で画像をアップロードすることができ、正解率が高かった場合表示することができます。</p>
+      <p>使用したもの：Pythonのフレームワークflaskを使い作成しました。サーバーはHeroku、ストレージとしてはAWSのS3を使用しています。</p>
+      <p><strong><a href="https://oyo6464.herokuapp.com" target="_blank">四択クイズ作成アプリのリンクはこちら</a></strong></p>
+      <p><strong><a  href="https://github.com/oyo6464/flask_s3_jiro" target="_blank">Githubソースコードリンクはこちら</a></strong></p>
+      <hr id="delimiter">
+      <h5>工夫した点</h5>
+      <p>　画像のアップロードや作成したい問題数を任意で変えられるようにすることで
+柔軟性を持たせました。
+httpステータスエラーがそのまま出力されないよう気を付け、アップロードできる画像の拡張子も限定しています。
+</p>
+      <h5>苦労した点</h5>
+      <p>　初めて制作するwebアプリだったので詰まった点はたくさんありますが、中でもアップロード機能の制限や、S3関係で苦戦しました。
+また、開発環境やブラウザによってエラーハンドリングの挙動が違い、そこでも悩まされました。</p>
+      <hr>
+      <h4><i class="fa fa-star"></i> 自己紹介ポートフォリオサイト</h4>
+      <div class="right-image"><img src="image/portfolio_site.png" alt="スクリーンショット" width=250px></div>
+      <p>現在ご覧いただいているこのサイトです。<br>html,cssで作成しており、サニタイズcssを使用しています。</p>
+
+      
+    </div>
+  
+  
+    <div class="usage card">
+<!--    ここに使用しているツールや言語説明する-->
+    <h2 id="usage"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i>使用している言語やソフト</h2>
+      <h3>〇オフィスソフト</h3>
+      <p>　Microsoftofficeソフト(Word、Excel、AccessPowerPoint)は使用経験があり、ExcelとAccessに関しては
+Microsoft Office Specialist Excel,
+Microsoft Office Specialist Accessを取得しています。</p>
+      <h3>〇使用言語</h3>
+      <h4>・Python</h4>
+      <p>　独学で勉強、また職業訓練でも学習しています。
+上記で紹介しましたが、webアプリを作成したり、ライブラリを使用して簡単なソースコードを書くことが可能です。また趣味ですが、簡単なゲーム開発の勉強をしています。</p>
+      <h3>〇その他</h3>
+      <h4>使用したことのあるツール、環境、サービスなど</h4> <p>git/AWSS3/Heroku/windows10/vscode/nginx/MySQL/ExcelVBA</p>
+        
+    </div>
+    <div class="hobby card">
+<!--        ここに趣味-->
+    <h2 id="hobby"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i>趣味紹介</h2>
+      <h3><i class="fa fa-camera"></i> キャンプ</h3>
+      <p>　私の趣味の１つをここで少しご紹介します。<br>2019年春ごろからキャンプに興味を持ち、徳島の大自然や、野外料理等を楽しんでいます。<br></p>
+      
+      
+<!--      ここから↓画像-->
+      <ul class="camp">
+      <li>
+        <img src="image/hanami.jpg" alt="キャンプ画像" width=250px>
+        <h3>お花見キャンプ</h3>
+        <p>香川県のことなみ土器どきひろばでお花見をしながらデイキャンプ
+<br>この日はハンバーガーを作りました。
+桜が辺り一面に咲き、とても綺麗でした。</p>
+        </li>
+      <li>
+        <img src="image/anabukigawa.jpg" alt="キャンプ画像" width=250px>
+        <h3>穴吹川キャンプ</h3>
+        <p>徳島県美馬市の穴吹川の中流である、二又の瀬でデイキャンプ<br>穴吹川は日本一の清流と呼ばれており、水がとても澄んでいます。<br>川遊びを楽しみました。</p>
+        </li>
+      <li>
+        <img src="image/IMG_5491.JPG" alt="キャンプ画像" width=250px>
+        <h3>美濃田の淵キャンプ場</h3>
+        <p>東みよし町にある、美濃田の淵キャンプ場で泊まりキャンプ<br>
+近くに吉野川があり、大自然が楽しめるお気に入りのキャンプ場です。<br>
+夜に焚き火をしながら星を眺めてすごしました。</p>
+        </li>
+      
+
+        <h3>その他画像</h3>
+        <p>その他にも、画像を少しご紹介します</p>
+      </ul>
+      <ul class="ather">
+      <li><img src="image/kawa.JPG" alt="川の画像" width=250px></li>
+      <li><img src="image/kare.PNG" alt="カレーの画像"></li>
+      <li><img src="image/sakura.JPG" alt="櫻の画像" width=250px></li>
+      <li><img src="image/yakitori.JPG" alt="焼き鳥の画像"></li>
+        
+      </ul>
+      
+      
+    </div>
+    <div class="summary card">
+<!--    まとめ-->
+    <h2 id="summary"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i>まとめ</h2>
+      <p>最後までご覧いただきありがとうございました。</p>
+      
+    </div>
+    
+    
+        
+        
+</div>
+</main>
+
+<footer>
+<!--    フッターの外-->
+    <div class="fotter-container">
+      <small>©sumire sakuragi</small>
+  </div>
+<!--    フッターの外-->
+</footer>
+  </body>
+</html>

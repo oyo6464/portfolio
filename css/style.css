@@ -1,0 +1,293 @@
+@charset "utf-8";
+html{
+  font-family: "Noto Sans JP",serif;
+  background-image: url(../image/background.jpg
+    );
+/*    padding: 10px 10px;*/
+    background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+ 
+}
+
+a{
+  text-decoration: none;
+/*  color:#a22041;*/
+  color: #0f345b;
+}
+
+a:hover{
+  color: bisque;
+}
+
+.card{
+  background-color: bisque;
+  box-shadow:0px 4px 10px 1px #ccc;
+/*  color: #f35;*/
+  color: #e95d6a;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: auto;
+  padding: 0px 50px 20px 50px;
+  margin-top: 40px;
+    
+ }
+
+
+/*カラーテスト*/
+.about {
+/*    background-color: #fff4ff;*/
+  background: radial-gradient(#fff, #ffe6e9);
+/*    color:#35f;*/
+}
+.self-introduction{
+/*    background-color:#ffc1c3;*/
+/*  background: radial-gradient(#fff,#);*/
+  color: #f84e7c;
+/*  background-color: #ffe4c4;*/
+  background-color: #ffeed9;
+}
+.production-object{
+    background-color:#ffd5df;
+  color: #640125;
+}
+.usage{
+    background-color:#ffecf1;
+/*  color: #0f345b;*/
+  color: #a22041;
+}
+.hobby{
+    background-color:#ffecdf;
+}
+.summary{
+/*    background-color: #ffeaea;*/
+  background: radial-gradient(#fff, #ffe6e9);
+}
+main{
+/*    background-color:#fff9fc;*/
+    margin: 0px;
+  padding: 10px 30px 30px 15px;
+}
+
+/*背景画像　中央 cover*/
+/*h1サイズによりpadding変更*/
+header{
+    background-color: deeppink;
+    background-image: url(../image/4IS_harunootozuretopinkunosakura_TP_V.jpg
+    );
+    padding: 10px 10px;
+    background-size: cover;
+/*  background-attachment: fixed;*/
+  background-repeat: no-repeat;
+}
+
+.header-container{
+/*  background-color:fuchsia;*/
+  font-family: "Hannari",sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.header-container h1{
+  font-size: 100px;
+  margin: 0;
+}
+
+footer{
+/*    background-color: dodgerblue;*/
+  text-align: center;
+  margin: 10px;
+  color: #e95d6a;
+}
+.fotter-container{
+/*    background-color: aqua;*/
+}
+
+/*ここから自己紹介用パーツ*/
+
+
+.card h2{
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+  
+  
+}
+/*猫の画像*/
+.self-introduction img{
+  border-radius: 100%;
+/*  float:right;*/
+}
+
+
+/*キャンプの画像・文*/
+
+.camp li{
+  background-color: white;
+/*  border-color: #fff;*/
+  border: 10px solid #ffd0c5;
+  list-style: none;
+  margin: 0 0 10px 0;
+  padding: 15px;
+  text-align: center;
+  border-radius: 1%;
+  
+}
+/*★*/
+.camp li img{
+/*  border-radius: 1%;*/
+}
+.hobby img{
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1%;
+}
+
+/*説明書きなしキャンプ画像・複数*/
+.ather{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+/*  background-color: #fff;*/
+  border-radius: 1%;
+}
+.ather li{
+  list-style: none;
+  margin: 10px auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/*制作物card*/
+
+.production-object img{
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1%;
+}
+
+/*リンク画像にマウス置いた時*/
+a:hover img{
+  opacity: 0.6;
+}
+
+/*点線の区切り線*/
+#delimiter{
+  border: none;
+  border-top: 1px dashed #e95d6a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav ul{
+    display: flex;
+    flex-flow: row;
+    margin: 0;
+}
+nav li{
+    flex: auto;
+    text-align: center;
+  padding: 7px;
+}
+nav a{
+    text-decoration: none;
+/*    font-size:*/
+  color: #fff;
+}
+
+/*色付けて確認*/
+nav{
+    background-color:#fff;
+}
+nav ul{
+    background-color:#cc3366;
+}
+/*ナビ終わり*/
+
+
+
+/*画面が広い時だけの設定*/
+@media screen and (min-width: 768px){
+  header{
+    background-attachment: fixed;
+  }
+/*  キャンプ画像　レイアウト*/
+  .camp li{
+    overflow: hidden;
+    text-align: left;
+    padding: 30px;
+  }
+  .camp li img{
+    float:left;
+    margin: 20px;
+  }
+  
+/*  自己紹介のルーのアイコン*/
+/*  ★*/
+  .self-introduction img{
+    float: left;
+    margin-right: 20px;
+  }
+/* 右寄せにしたい画像*/
+  .right-image{
+    float:right;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+/*  制作物紹介カード　フロート解除*/
+  .production-object {
+    overflow: hidden;
+  }
+}
+
+
+/*  画面が狭い時だけの設定*/
+@media screen and (max-width: 500px){
+/*未使用class*/
+  .none {display:none;}
+  
+/*  css適用されてるか確認*/
+  h2{
+/*    color: aqua;*/
+  }
+  .hobby {
+/*     background-color: #fff;*/
+    /* padding:  */
+  }
+  .camp li{
+    width: 80vw;
+    position: relative;
+left: 50%;
+transform: translateX(-50%);
+}
+  .hobby ul{
+    padding: 0px;
+  }
+  
+  .ather li{
+    width: 80vw;
+    position: relative;
+left: 50%;
+transform: translateX(-50%);
+  }
+  
+  .header-container h1{
+  font-size: 300%;
+  margin: 0;
+}
+
+  
+}
